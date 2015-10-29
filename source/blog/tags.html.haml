@@ -1,0 +1,9 @@
+---
+title: Tags
+---
+
+%h1 Blog Tags
+%ul
+- blog.tags.each do |t,a|
+  - articles_num = a.size
+  %li= link_to "#{t} [#{articles_num}]", tag_path(t)

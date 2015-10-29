@@ -1,0 +1,4 @@
+= wrap_layout :application do
+  - if current_article
+    %h1= current_article.title
+  = yield
